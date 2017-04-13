@@ -49,7 +49,7 @@
             stroke="black" stroke-width="0.2"
             id="Center" />
 
-      <circle v-for="arrow in arrows" :cx="arrow.x" :cy="arrow.y" :r="size*0.009" stroke="green" stroke-width="1"
+      <circle v-for="arrow in arrows" :cx="arrow.x" :cy="arrow.y" :r="size*0.009" stroke="green" fill="#3a3a3a" stroke-width="1"
               @mouseup.stop="pull(arrow.val, $event)"
               @mousemove.stop="updateChoose(arrow.val)"/>
     </svg>
@@ -103,7 +103,6 @@ export default {
   },
   methods: {
     pull (value) {
-      console.log(value)
       // Calculation of the coordinates in the svg
       var svg = document.querySelector('svg')
       var pt = svg.createSVGPoint()

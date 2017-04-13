@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <target :size="200"></target>
+    <target :size="600"></target>
   </div>
 </template>
 
