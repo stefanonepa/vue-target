@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "vue": "^2.2.2",
+    "vue": "^3.0.0",
     "vue-touch": "^2.0.0-beta.4"
   },
   "devDependencies": {
